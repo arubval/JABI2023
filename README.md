@@ -23,7 +23,7 @@ The structural and accessory genes of the virus, which are the proteins most exp
 
 Fig. 3. Ka/Ks ratio for SARS-CoV-2 genes. (A) Ka/Ks ratio versus the p-value obtained (which depends on both number of pairwise alignments used and the length of the sequence) for all SARS-CoV-2 genes. The different shapes of the dots highlight the six possible reading frames, and the different colors highlight the different gene clusters (see legend). The points corresponding to frame +1 are labeled with the gene name. On the right side a zoom for the range of p-values between 0.001 and 0.1 has been shown to better see the dispersion. (B) Ka/Ks ratio distribution separated by the 6 reading frames analyzed and by gene type (structural, non-structural, and accessory).
 
-The next step was to determine whether these variations in the KaKs ratio were global or localized to specific points. A sliding window protocol was designed for this purpose. Most structural genes show global changes in the KaKs ratio. However, the spike (S) gene has higher ratios in the regions that interact with host cells (ACE2 receptor, receptor binding domain).
+The next step was to determine whether these variations in the KaKs ratio were global or localized to specific points. A sliding window protocol was designed for this purpose. Most structural genes show global changes in the KaKs ratio. However, the spike (S) gene has higher ratios in the regions that interact, at protein level, with host cells (ACE2 receptor, receptor binding domain).
 
 ![imagen](https://github.com/arubval/JABI2023/assets/84905997/55cf1ac7-08ce-4900-a3b7-f8d58bd98765)
 
