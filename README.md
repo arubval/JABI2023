@@ -11,13 +11,19 @@ The Ka/Ks ratio is used to measure the pressure selection. This is the number of
 
 Fig. 1. Ka/Ks ratio in the pangenome of H. pylori. Distribution of the Ka/Ks ratio in all the protein-coding genes from the pangenome, where different groups are highlighted (different colors) and genes that encode for uncharacterized proteins (asterisks). Black dots represent the median of the distribution. Note the double grouping of genes inside both +1 and −2 reading frames.
 
+In this work, we used the genome of the SARS-CoV-2 virus, which caused the pandemic that began in 2019. Its genome codes for non-structural proteins (nsp), structural proteins (S, M, E and N) and accessory factors that help correct assembly. The protocol has been adapted for use with approximately 2000 strains sequenced in a standardized manner at the Hospital Universitario San Pedro.
+
 ![imagen](https://github.com/arubval/JABI2023/assets/84905997/13522ab7-4517-4130-af7c-f0985ea99f61)
 
 Fig. 2. Viral genes and protocol for calculating the selection pressure. (A) SARS-CoV-2 genome organization. The genome is divided into non-structural genes (nsp genes coming from both ORF1a and ORF1ab), structural genes (S, E, M, and N) and accessory factors. (B) Procedure for calculating the Ka/Ks ratio: 1) Coding sequences (CDS) are obtained from the reference strain (GenBank:MN908947.3). 2) The six putative reading frames for each CDS in the reference strain are extracted, and homologous sequences are searched for in all the strains. 3) The Ka/Ks ratio for each frame can then be calculated using pairwise alignments of the homologs (the same genes from the other viral strains). The analyzed gene is highlighted in blue, and nucleotide changes or in red (when they correspond to nonsynonymous changes), or in green (to synonymous changes). 4) Finally, the distribution of Ka/Ks ratios from all the viral genes can be shown, where we expect a value lower than 1 for most of the genes in the frame +1 (negative selection), and slightly higher values in the frame −2. However, the other four frames should show values greater than 1 (positive selection).
 
+The structural and accessory genes of the virus, which are the proteins most exposed to the host immune system and interact with proteins of the infected cell, show positive selection. However, non-structural proteins, which are involved in the processes that take place once the viral genome has entered the cell, show negative selection, suggesting that these proteins have essential functions
+
 ![imagen](https://github.com/arubval/JABI2023/assets/84905997/f2da2344-92fc-444e-90e9-d78f4310a661)
 
 Fig. 3. Ka/Ks ratio for SARS-CoV-2 genes. (A) Ka/Ks ratio versus the p-value obtained (which depends on both number of pairwise alignments used and the length of the sequence) for all SARS-CoV-2 genes. The different shapes of the dots highlight the six possible reading frames, and the different colors highlight the different gene clusters (see legend). The points corresponding to frame +1 are labeled with the gene name. On the right side a zoom for the range of p-values between 0.001 and 0.1 has been shown to better see the dispersion. (B) Ka/Ks ratio distribution separated by the 6 reading frames analyzed and by gene type (structural, non-structural, and accessory).
+
+The next step was to determine whether these variations in the KaKs ratio were global or localized to specific points. A sliding window protocol was designed for this purpose. Most structural genes show global changes in the KaKs ratio. However, the spike (S) gene has higher ratios in the regions that interact with host cells (ACE2 receptor, receptor binding domain).
 
 ![imagen](https://github.com/arubval/JABI2023/assets/84905997/55cf1ac7-08ce-4900-a3b7-f8d58bd98765)
 
@@ -27,6 +33,11 @@ Fig. 4. Ka/Ks ratio distribution along the sequence of structural genes. (A) Ka/
 
 Fig. 5. SARS-CoV-2 Spike protein structure highlighting regions with a higher Ka/Ks ratio. (A) Surface and cartoon representation of Spike protein (PDB:6VXX). The receptor binding domain has been marked at the top. (B) Receptor binding domain viewed from above. (C) Surface and cartoon representation of the N-terminal region of the N protein (PDB:6M3M, positions 41-174). Amino acids involved in binding to the virus genome, whose mutations are known to affect this binding, have been labeled along with their position in the protein sequence. (D) Surface and cartoon representation of the C-terminal region of the N protein (PDB:6WJI, positions 257-364). All the structures have been colored with different intensities of red depending on the value of the Ka/Ks ratio.
 
+The Ka/Ks ratio was analyzed in ORFs overlapping important structural genes. In general, a low ratio was obtained, which could partly explain the low Ka/Ks ratio values of structural genes in alternative reading frames (frame +2 and frame +3) with respect to the value given by their reading frame +1.
+
 ![imagen](https://github.com/arubval/JABI2023/assets/84905997/d01df8b3-706e-4237-8d05-1ab0483af631)
 
 Fig. 6. Ka/Ks ratio in overlapping genes. (A) Overlapping regions of S, N and ORF3 genes. The frame relative to the main gene has been differently colored: +2 (red), +3 (green). (B) Ka/Ks ratio versus p-value for overlapping ORFs. Genes were distinguished by different colors, and frames by different shapes. (C) Ka/Ks ratio distribution separated by the 6 reading frames analyzed. (D) Distribution of Ka/Ks ratio along the length of gene ORF3. The percentage of mutations per position obtained from Nextstrain database is also shown for comparison (https://nextstrain.org/ncov/gisaid/global/6m). The primary Y-axis represents the Ka/Ks ratio, and the secondary Y-axis the percentage of mutations in relative value. In addition, variants of concern (VOC) from the Outbreak.info database were added (colored stars). The blue line marks the Ka/Ks value of 1.
+
+The results presented here show how to analyze the selection pressure to which the genes of a viral genome are subjected, which is not only useful for locating highly conserved regions and drug targets, but also allows the analysis of overlapping genes
+
